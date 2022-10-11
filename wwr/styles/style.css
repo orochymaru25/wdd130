@@ -5,26 +5,11 @@
 
 .nav{
     text-align: center;
-    
+    font-family: 'Grandstander', cursive, serif;
 }
-
-.home-title, h4, .button-box, .home-grid{
-    text-align: center;
-    color: #29405B;
+.nav a{
+    padding: 35px;
 }
-
-#background {
-    height: 725px;
-}
-
-body {
-    background-color: #C0C5C1;
-}
-
-header {
-    background-color: #29405B;
-}
-
 .nav a:hover {
     background-color: #B4C7C5;
     color: #354441;
@@ -35,16 +20,68 @@ header {
 }
 
 .home-title {
+    font-family: 'Grandstander', cursive, serif;
+    font-size: 2em;
+    text-align: center;
+    color: #29405B;
+    margin-top: 10px;
+}
+h2 {
+    margin: 0;
+}
+
+h4 {
+    font-family: 'Quicksand', Helvetica, sans-serif;
+    font-weight: 700;
+    text-align: center;
     color: #29405B;
 }
-/* h4 {
-    color: #29405B;
-} */
 
+.button-box {
+    text-align: center;
+    color: #29405B;
+}
 .book, .join {
+    font-family: 'Grandstander', cursive, serif;
+    font-size: 18px;
     background-color: #29405B;
     text-decoration: none;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
+
+.home-grid{
+    font-family: 'Grandstander', cursive, serif;
+    text-align: center;
+    color: #29405B;
+}
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+.card-img {
+    border: 10px solid #d9c2a3;
+}
+#background {
+    background-color: #354441;
+    height: 725px;
+}
+main section img {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #C0C5C1;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #29405B;
+}
+
+
+
 .button-box .book:hover, .msg .join:hover {
     background-color: #B4C7C5;
     color: #29405B;
@@ -53,27 +90,31 @@ header {
     color: #E4ECF1;
 }
 
-
-#background {
-    background-color: #354441;
-}
-
 .msg {
+    font-family: 'Grandstander', cursive, serif;
     background-color: #354441;
     color: #B4C7C5;
+    line-height: 1.5em;
+    padding: 35px;
 }
-
 .msg p {
     color: #E4ECF1;
+    font-family: 'Quicksand', Helvetica, sans-serif;
+    font-size: .8em;
+    padding-bottom: 15px;
+
 }
 
 footer {
+    font-family: 'Quicksand', Helvetica, sans-serif;
     background-color: #29405B;
     color: #B4C7C5 ;
     font-size: 1.2em;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
-
 footer p a:hover {
+    font-family: 'Grandstander', cursive, serif;
     background-color: #B4C7C5;
     color: #29405B;
     text-decoration: underline;
@@ -82,14 +123,20 @@ footer a:link, a:visited {
     color: #E4ECF1;
     text-decoration: none;
 }
+footer .social img  {
+    padding-top: 15px;
+} 
+
 
 
 .logo img{
+    padding-top: 5px;
     width: 80px;
 }
 
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 
 #hero-img {
