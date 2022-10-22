@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.container > div {
+    /* width: 400px; */
+    border: 1px solid blue;
+}
+.tart {
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+.img {
+    width: 50%;
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+.cherries {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
