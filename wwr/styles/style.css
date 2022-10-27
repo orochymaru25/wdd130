@@ -6,6 +6,8 @@
 .nav{
     text-align: center;
     font-family: 'Grandstander', cursive, serif;
+    display: flex;
+    justify-content: space-around;
 }
 
 .nav a{
@@ -82,6 +84,14 @@ body {
 
 header {
     background-color: #29405B;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
 }
 
 .button-box .book:hover, .msg .join:hover {
