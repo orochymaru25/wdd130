@@ -2,18 +2,15 @@
     max-width: 1600px;
     margin: 0 auto;
 }
-
 nav{
     text-align: center;
     font-family: 'Grandstander', cursive, serif;
     display: flex;
     justify-content: space-around;
 }
-
 nav a{
     padding: 35px;
 }
-
 nav a:hover {
     background-color: #B4C7C5;
     color: #354441;
