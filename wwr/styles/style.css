@@ -195,17 +195,6 @@ header {
     grid-row: 1/2;
     margin-top: 100px;
 }
-#company-blog {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    margin-top: 100px;
-    text-align: center;
-}
-#company-blog h4 {
-    font-size: 2rem;
-    color: #B4C7C5;
-    background-color: rgba(41, 64, 91,.6);
-}
 #blog-img {
     width: 100%;
 }
@@ -214,7 +203,7 @@ header {
     font-size: 2em;
     text-align: center;
     color: #E4ECF1;
-    margin-top: 10px;
+    margin-top: 70px;
 }
 .blog-grid section{
     font-family: 'Grandstander', cursive, serif;
@@ -222,8 +211,7 @@ header {
     color: #29405B;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(7, auto);
-    margin: 50px;
+    margin: 0 0 50px 0;
 }
 
 .card-blog-img {
@@ -235,6 +223,14 @@ header {
     transform: scale(1.1);
     opacity: .6;
     transition: .5s;
+}
+#blog-post h4 {
+    color: rgb(41, 64, 91);
+    font-size: 2rem;
+    /* color: #B4C7C5; */
+}
+.section-title {
+    grid-column: 2/9;
 }
 .rivers1-card {
     grid-column: 2/5;
@@ -345,12 +341,12 @@ footer .social img  {
         display: block;
         margin: 0 auto;
     }
-    #blog{
+    /* #blog{
         margin-top: -150px; 
-    }
-    #company-blog {
+    } */
+    /* #company-blog {
         margin:0;
-    }
+    } */
     footer {
         margin-top: 25px;
     }
