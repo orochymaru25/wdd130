@@ -225,9 +225,8 @@ header {
     transition: .5s;
 }
 #blog-post h4 {
-    color: rgb(41, 64, 91);
+    color: #29405b;
     font-size: 2rem;
-    /* color: #B4C7C5; */
 }
 .section-title {
     grid-column: 2/9;
@@ -341,12 +340,6 @@ footer .social img  {
         display: block;
         margin: 0 auto;
     }
-    /* #blog{
-        margin-top: -150px; 
-    } */
-    /* #company-blog {
-        margin:0;
-    } */
     footer {
         margin-top: 25px;
     }
