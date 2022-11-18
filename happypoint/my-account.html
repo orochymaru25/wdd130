@@ -4,9 +4,131 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Sora:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Happy Point - My Account</title>
 </head>
 <body>
+    <header>
+        <a id="logo_link" href="index.html">
+            <div class="logo">
+                <img src="images/logo.png" alt="Happy Point logo">
+            </div>
+        </a>
+        <nav>
+            <a href="#">Sell on Happy Point</a>
+            <a href="#">follow us on</a>
+            <a href="/happypoint/index.html">Home</a>
+            <a href="/happypoint/my-account.html">My Account</a>
+            <a href="/happypoint/shopping-cart.html">Shopping Cart</a>
+        </nav>
+        <a href="https://facebook.com" target="_blank">
+            <img src="images/facebook.png" alt="fb icon">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <img src="images/twitter.png" alt="twitter icon">
+        </a>
+        <a href="/happypoint/shopping-cart.html">
+            <img src="/happypoint/images/cart.png" alt="Shopping Cart logo">
+        </a>
+        <input type="text" placeholder="Search..">
+    </header>
+    
+    <main id="profile">
+        <div id="profile-msg">
+            <h2>Manage and protect your account</h2>
+        </div>
+        <div id="my-account-links">
+            <h2>My Account</h2>
+            <ul>
+                <li>My Profile</li>
+                <li>Addresses</li>
+                <li>Payment Options</li>
+                <li>My Orders</li>
+                <li>Happy Point Wallet</li>
+                <li>My vouchers</li>
+            </ul>  
+        </div>
+        <div id="personal-profile">
+            <h4>Personal Profile</h4>
+            <form action="/action_page.php">
+                <ul>
+                    <li>
+                        <label for="fname">First name:</label>
+                        <input type="text" id="fname" name="fname" value="John">
+                    </li>
+                    <li>
+                        <label for="lname">Last name:</label>
+                        <input type="text" id="lname" name="lname" value="Doe">
+                    </li>
+                    <li>
+                        <label for="mail">E-mail:</label>
+                        <input type="email" id="mail" name="user_email">
+                    </li>
+                    <li>
+                        <label for="gender">Gender:</label>
+                        <input type="checkbox" name="gender" value="male" />Male
+                        <input type="checkbox" name="gender" value="female" />female
+                    </li>
+                    <li>
+                        <label for="birth">Date of Birth:</label>
+                        <input type="date" name="birthday">
+
+                    </li>
+                    <li>
+                        <input type="submit" value="Save">
+                    </li>
+                </ul>
+            </form>
+            <div id="profile-picture">
+                <img src="/happypoint/images/profile-picture.jpg" alt="Profile Picture">
+            </div>
+            <form>
+                <label for="image">Select Image</label>
+                <input type="file" name="fileupload" accept="image/*">
+            </form>
+              
+        </div>
+    </main>
+
+
+
+
+
+
+    <footer>
+        <div id="customer-care">
+            <h2>Customer Care</h2>
+            <ul>
+                <li>Contact Us</li>
+                <li>Shopping & Delivery</li>
+                <li>Returns & Refunds</li>
+            </ul>  
+        </div>
+        <div id="happy-pont">
+            <h2>Happy Point</h2>
+            <ul>
+                <li>All Catergories</li>
+                <li>About Happy Point</li>
+                <li>Terms & Conditions</li>
+            </ul>  
+        </div>
+        <div id="follow-us-on">
+            <h2>Follow us on</h2>
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="fb icon">
+            </a>
+        </div>
+        <h5>&copy;2022 Happy Point. All Rights Reserved.</h5>
+    </footer>
     
 </body>
 </html>
