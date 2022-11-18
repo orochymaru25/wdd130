@@ -266,7 +266,7 @@ footer {
     color: #B4C7C5 ;
     font-size: 1.2em;
     padding: 25px 50px;
-    margin-top: 200px;
+    margin-top: 230px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -342,7 +342,7 @@ form {
     box-sizing: border-box;
   
     /* Match form field borders */
-    border: 1px solid #999;
+    border: 3px solid #999;
   }
   
   input:focus,
@@ -369,6 +369,25 @@ form {
        between the labels and their text fields */
     margin-left: 0.5em;
   }
+  #msg {
+    margin-bottom: 10px;
+  }
+
+  /*W10*/
+
+  #feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: auto;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    /* display: none;       */
+}
+.moveDown {
+    margin-top: 3em;
+}
 
   /*----------------------------*/
 
@@ -411,6 +430,9 @@ form {
     }
     footer {
         margin-top: 25px;
+    }
+    #contactus {
+        margin-top: 300px;
     }
 }
 

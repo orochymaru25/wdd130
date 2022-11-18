@@ -35,7 +35,7 @@
         </div>
     </div>
 
-    <form action="/my-handling-form-page" method="post">
+    <form class="feedback" id="feedback" action="/my-handling-form-page" method="post">
         <ul>
             <li>
               <label for="name">Name:</label>
@@ -53,65 +53,27 @@
           <li class="button">
             <button type="submit">Send your message</button>
           </li>
-
-
     </form>
 
+<script>
+    // get the feedback div element so we can do something with it.
+    const feedbackElement = document.getElementById('feedback');
+    // get the form so we can read what was entered in it.
+    const formElement = document.forms[0];
+    // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+    formElement.addEventListener('submit', function(e) {
+        // stop the form from doing the default action.
+        e.preventDefault();
+        // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+        feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+        // make the feedback element visible.
+        feedbackElement.style.display = "block";
+        // add a class to move everything down so our message doesn't cover it.
+        document.body.classList.toggle('moveDown');
+    });
+</script>
 
-
-
-    <section>
-        <h2>Payment information</h2>
-        <p>
-          <label for="card">
-            <span>Card type:</span>
-          </label>
-          <select id="card" name="usercard">
-            <option value="visa">Visa</option>
-            <option value="mc">Mastercard</option>
-            <option value="amex">American Express</option>
-          </select>
-        </p>
-        <p>
-          <label for="number">
-            <span>Card number:</span>
-            <strong><span aria-label="required">*</span></strong>
-          </label>
-          <input type="tel" id="number" name="cardnumber" />
-        </p>
-        <p>
-          <label for="expiration">
-            <span>Expiration date:</span>
-            <strong><span aria-label="required">*</span></strong>
-          </label>
-          <input
-            type="text"
-            id="expiration"
-            required="true"
-            placeholder="MM/YY"
-            pattern="^(0[1-9]|1[0-2])\/([0-9]{2})$" />
-        </p>
-      </section>
-
-
-      <input type="text" value="by default this element is filled with this text" />
-      <textarea>
-        by default this element is filled with this text
-        </textarea>
-        <li class="button">
-            <button type="submit">Send your message</button>
-          </li>
-
-
-
-
-
-
-
-
-
-
-    <footer>
+    <footer id="contactus">
         <p>Dry Oar &copy; 2022 - Rochy Beatingo</p>
         <p><a href="site-plan-rafting.html">Site Plan</a></p>
         <p><a href="contactus.html">Contact Us</a></p>
