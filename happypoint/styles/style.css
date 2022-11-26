@@ -60,6 +60,7 @@ section a{
   height: 50px;
   text-indent: 10px;
   font-size: x-large;
+  border-radius: 10px;
 }
 #cart{
     grid-column: 6/7;
