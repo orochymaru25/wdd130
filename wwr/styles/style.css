@@ -15,12 +15,10 @@ nav a:hover {
     background-color: #B4C7C5;
     color: #354441;
 }
-
 nav a:link, a:visited {
     color: #E4ECF1;
     text-decoration: none;
 }
-
 .home-title {
     font-family: 'Grandstander', cursive, serif;
     font-size: 2em;
@@ -28,7 +26,6 @@ nav a:link, a:visited {
     color: #E4ECF1;
     margin-top: 10px;
 }
-
 h2 {
     margin: 0;
 }
