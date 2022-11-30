@@ -1,11 +1,9 @@
 /*start-header*/
 #content {
   max-width: 1600px;
-  /* width: 1000px; */
-  margin-left: 0 auto;
+  margin: 0 auto;
 }
 header {
-  padding: 5px;
   background-image: linear-gradient(#22333B 30%, #5E503F);
   font-family: 'Alice', Helvetica, serif;
   color: #F2F4F3;
@@ -61,7 +59,7 @@ section a{
   height: 50px;
   border-radius: 10px;
   text-indent: 10px;
-  font-size: x-large;
+  font-size: 1.5rem;
 }
 .logo-cart img{
   box-sizing: border-box;
