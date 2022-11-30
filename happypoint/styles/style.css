@@ -48,7 +48,7 @@ section a{
 }
 .logo img{
   box-sizing: border-box;
-  width: 100%;
+  width: 50%;
   height: 100%;
   object-fit: cover;
   border-radius: 30px;
@@ -120,7 +120,6 @@ section a{
 .promo-img:hover {
   opacity: 95%;
   transition: .5s;
-  transform: scale(1.1);
 }
 /*End-hover-effect-best-deals*/
 /*start-best-deals*/
