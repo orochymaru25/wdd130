@@ -670,6 +670,7 @@ footer div ul li:hover{
   background: #A9927D;
 }
 /*end-third-section-hover*/
+
 @media screen and (max-width:900px) {
   #nav_pages{
     display: block;
