@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alice&family=Sora:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Happy Point - Home</title>
+</head>
+
+<body>
+  <div id="content">
+    <header>
+      <div id="nav_pages">
+        <a href="w3s-slideshow.html">Sell on Happy Point</a>
+        <p>follow us on 
+          <a class="social-media" href="https://facebook.com" target="_blank">
+            <img src="images/social-facebook.png" alt="fb icon">
+          </a>
+          <a class="social-media" href="https://twitter.com" target="_blank">
+            <img src="images/social-twitter.png" alt="twitter icon">
+          </a>
+        </p>
+        <a href="index.html">Home</a>
+        <a href="my-account.html">My Account</a>
+        <a href="shopping-cart.html">Shopping Cart</a>
+      </div>
+      <div id="logo-search-cart">
+        <div id="logo_link">
+          <a href="index.html">
+            <div class="logo">
+              <img src="images/logo.png" alt="Happy Point logo">
+            </div>
+          </a>
+        </div>
+        <div id="search">
+          <input type="text" placeholder="Search..">
+        </div>
+        <div id="cart">
+          <a href="index.html">
+            <div class="logo-cart">
+              <img src="images/cart-icon.png" alt="Happy Point logo">
+            </div>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 6</div>
+            <img src="images/products-appliances.jpeg" style="width:100%">
+            <div class="text">Appliances</div>
+        </div>
+    
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 6</div>
+            <img src="images/products-watch.jpg" style="width:100%">
+            <div class="text">Watch</div>
+        </div>
+    
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 6</div>
+            <img src="images/products-eyewear.jpg" style="width:100%">
+            <div class="text">Eyewear</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 6</div>
+            <img src="images/products-bag.jpg" style="width:100%">
+            <div class="text">Appliances</div>
+        </div>
+    
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 6</div>
+            <img src="images/products-watch.jpg" style="width:100%">
+            <div class="text">Watch</div>
+        </div>
+    
+        <div class="mySlides fade">
+            <div class="numbertext">6 / 6</div>
+            <img src="images/products-eyewear.jpg" style="width:100%">
+            <div class="text">Eyewear</div>
+        </div>
+    
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+
+    <footer>
+      <h2>Customer Care</h2>
+      <div id="customer-care">
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Shopping & Delivery</a></li>
+          <li><a href="#">Returns & Refunds</a></li>
+        </ul>
+      </div>
+      <h2>Happy Point</h2>
+      <div id="happy-point">
+        <ul>
+          <li><a href="#">All Catergories</a></li>
+          <li><a href="#">About Happy Point</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="site-plan.html">Site-plan</a></li>
+        </ul>
+      </div>
+      <h2>Follow us on</h2>
+      <div id="follow-us-on">
+        <a href="https://facebook.com" target="_blank">
+          <img src="images/social-facebook.png" alt="fb icon">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+          <img src="images/social-twitter.png" alt="twitter icon">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+          <img src="images/social-instagram.png" alt="fb icon">
+        </a>
+      </div>
+      <h5>&copy;2022 Happy Point. All Rights Reserved.</h5>
+
+    </footer>
+  </div>
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+</body>
+
+</html>
