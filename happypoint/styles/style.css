@@ -485,6 +485,9 @@ footer h2:nth-of-type(3) {
 #customer-care ul li, #happy-point ul li{
   list-style-type: none;
 }
+footer div ul li a{
+  text-decoration: none;
+}
 footer #follow-us-on a img {
 box-sizing: border-box;
 width: 10%;
@@ -495,6 +498,17 @@ footer h5 {
   grid-row: 3/4;
 }
 /*end-footer*/
+/*start-footer-hover*/
+footer div ul li:hover{
+  opacity: 80%;
+}
+#follow-us-on a img:hover{
+  opacity: 80%;
+  transform: scale(1.1);
+  transition: .5s;
+}
+/*end-footer-hover*/
+
 
 
 
