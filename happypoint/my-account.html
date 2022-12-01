@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Sora:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/style.css">
-    <title>Happy Point - My Account</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alice&family=Sora:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Happy Point - My Account</title>
 </head>
+
 <body>
   <header>
     <section id="nav_pages">
       <a href="#">Sell on Happy Point</a>
-      <p>follow us on 
+      <p>follow us on
         <a class="social-media" href="https://facebook.com" target="_blank">
           <img src="images/social-facebook.png" alt="fb icon">
         </a>
@@ -46,98 +48,107 @@
       </div>
     </section>
   </header>
-    
-    <main id="profile">
-        <div id="profile-msg">
-            <h2>Manage and protect your account</h2>
-        </div>
-        <div id="my-account-links">
-            <h2>My Account</h2>
-            <ul>
-                <li>My Profile</li>
-                <li>Addresses</li>
-                <li>Payment Options</li>
-                <li>My Orders</li>
-                <li>Happy Point Wallet</li>
-                <li>My vouchers</li>
-            </ul>  
-        </div>
-        <div id="personal-profile">
-            <h4>Personal Profile</h4>
-            <form action="/action_page.php">
-                <ul>
-                    <li>
-                        <label for="fname">First name:</label>
-                        <input type="text" id="fname" name="fname" value="John">
-                    </li>
-                    <li>
-                        <label for="lname">Last name:</label>
-                        <input type="text" id="lname" name="lname" value="Doe">
-                    </li>
-                    <li>
-                        <label for="mail">E-mail:</label>
-                        <input type="email" id="mail" name="user_email">
-                    </li>
-                    <li>
-                        <label for="gender">Gender:</label>
-                        <input type="checkbox" name="gender" value="male" />Male
-                        <input type="checkbox" name="gender" value="female" />female
-                    </li>
-                    <li>
-                        <label for="birth">Date of Birth:</label>
-                        <input type="date" name="birthday">
 
-                    </li>
-                    <li>
-                        <input type="submit" value="Save">
-                    </li>
-                </ul>
-            </form>
-            <div id="profile-picture">
-                <img src="images/profile-picture.jpg" alt="Profile Picture">
-            </div>
-            <form>
-                <label for="image">Select Image</label>
-                <input type="file" name="fileupload" accept="image/*">
-            </form>
-              
-        </div>
-    </main>
-
-
-    <footer>
-      <h2>Customer Care</h2>
-      <div id="customer-care">
+  <main id="profile-container">
+    <section>
+      <div id="my-account-links">
+        <h2 id="my-account">My Account</h2>
         <ul>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">Shopping & Delivery</a></li>
-          <li><a href="#">Returns & Refunds</a></li>
+          <li><a href="#">My Profile</a></li>
+          <li><a href="#">Addresses</a></li>
+          <li><a href="#">Payment Options</a></li>
+          <li><a href="#">My Orders</a></li>
+          <li><a href="#">Happy Point Wallet</a></li>
+          <li><a href="#">My vouchers</a></li>
         </ul>
       </div>
-      <h2>Happy Point</h2>
-      <div id="happy-point">
-        <ul>
-          <li><a href="#">All Catergories</a></li>
-          <li><a href="#">About Happy Point</a></li>
-          <li><a href="#">Terms & Conditions</a></li>
-          <li><a href="site-plan.html">Site-plan</a></li>
-        </ul>
+    </section>
+    <section id="profile-child-container">
+      <div id="profile-msg">
+        <h2>Manage and protect your account</h2>
+        <p>Personal Profile</p>
       </div>
-      <h2>Follow us on</h2>
-      <div id="follow-us-on">
-        <a href="https://facebook.com" target="_blank">
-          <img src="images/social-facebook.png" alt="fb icon">
-        </a>
-        <a href="https://twitter.com" target="_blank">
-          <img src="images/social-twitter.png" alt="twitter icon">
-        </a>
-        <a href="https://instagram.com" target="_blank">
-          <img src="images/social-instagram.png" alt="fb icon">
-        </a>
+      <div id="personal-profile">
+        <form action="/action_page.php">
+          <div class="input_field">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" value="John">
+          </div>
+          <div class="input_field">
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname" value="Smith">
+          </div>
+          <div class="input_field">
+            <label for="mail">E-mail:</label>
+            <input type="email" id="mail" name="user_email" value="abc123@gmail.com">
+          </div>
+          <div class="input_field" id="gender">
+            <p>Gender:</p>
+            <input type="checkbox" name="gender" value="male" />
+            <label for="gender">Male</label>
+            <input type="checkbox" name="gender" value="female" />
+            <label for="gender">Female</label>
+          </div>
+          <div class="input_field">
+            <label for="birth">Date of Birth:</label>
+            <input type="date" name="birthday" id="date">
+          </div>
+          <div id="save">
+            <input type="submit" value="Save">
+          </div>
+        </form>
       </div>
-      <h5>&copy;2022 Happy Point. All Rights Reserved.</h5>
+    </section>
+    <section>
+      <div id="profile-picture">
+        <img src="images/profile-picture.jpg" alt="Profile Picture">
+      </div>
+      <div id="image">
+        <form>
+          <label for="image">Select Image</label>
+          <input type="file" name="fileupload" accept="image/*" value="Select Image">
+        </form>
+      </div>
+    </section>
 
-    </footer>
-    
+    </div>
+  </main>
+
+
+  <footer>
+    <h2>Customer Care</h2>
+    <div id="customer-care">
+      <ul>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Shopping & Delivery</a></li>
+        <li><a href="#">Returns & Refunds</a></li>
+      </ul>
+    </div>
+    <h2>Happy Point</h2>
+    <div id="happy-point">
+      <ul>
+        <li><a href="#">All Catergories</a></li>
+        <li><a href="#">About Happy Point</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="site-plan.html">Site-plan</a></li>
+      </ul>
+    </div>
+    <h2>Follow us on</h2>
+    <div id="follow-us-on">
+      <a href="https://facebook.com" target="_blank">
+        <img src="images/social-facebook.png" alt="fb icon">
+      </a>
+      <a href="https://twitter.com" target="_blank">
+        <img src="images/social-twitter.png" alt="twitter icon">
+      </a>
+      <a href="https://instagram.com" target="_blank">
+        <img src="images/social-instagram.png" alt="fb icon">
+      </a>
+    </div>
+    <h5>&copy;2022 Happy Point. All Rights Reserved.</h5>
+
+  </footer>
+
 </body>
+
 </html>
