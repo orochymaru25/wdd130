@@ -118,7 +118,7 @@ section a{
 /*end-onsale-container*/
 /*Start-hover-effect-best-deals*/
 .promo-img:hover {
-  opacity: 95%;
+  opacity: 80%;
   transition: .5s;
 }
 /*End-hover-effect-best-deals*/
@@ -169,6 +169,16 @@ object-fit: cover;
 border-radius: 5px;
 }
 /*end-best-deals*/
+/*start-best-deals-hover*/
+#best-deals div h2:hover{
+  opacity: 80%;
+}
+#best-deals img:hover{
+  opacity: 80%;
+  transform: scale(1.1);
+  transition: .5s;
+}
+/*end-best-deals-hover*/
 /*start-categories*/
 #categories-container {
   font-family: 'Sora', sans-serif;
@@ -299,6 +309,14 @@ border-radius: 5px;
   border-radius: 5px;
 }
 /*end-categories*/
+/*start-categories-hover*/
+#categories-container h2:hover, #categories-container h5:hover{
+  opacity: 80%;
+}
+#categories-container img:hover{
+  opacity: 80%;
+}
+/*end-categories-hover*/
 /*start-payment*/
 #payment-delivery-container{
   background-image: linear-gradient(#A9927D, #5E503F);
