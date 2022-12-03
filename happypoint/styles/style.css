@@ -9,11 +9,11 @@ header {
   background-image: linear-gradient(#22333B 30%, #5E503F);
   font-family: 'Alice', Helvetica, serif;
   color: #F2F4F3;
+  font-size: 1.2rem;
 }
 div a{
   text-decoration: none;
   color: #F2F4F3;
-  font-size: 1.2rem;
 }
 #nav_pages {
   padding: 20px 0;
@@ -22,18 +22,16 @@ div a{
 }
 .social-media img{
   width: 20px;
-  margin: 0 10px 0 20px;
-  scale: 2;
+  margin: 0 10px 0 5px;
 }
 #nav_pages p{
   margin: 0;
-  font-size: 1rem;
 }
 #logo-search-cart {
   display: grid;
-  grid-template-columns: 5% 20% 1fr 10% 5%;
+  grid-template-columns: 50px 10% 1fr 10% 50px;
+  grid-template-rows: auto;
   align-items: center;
-  gap: 10px;
 }
 #logo_link {
   grid-column: 2/3;
@@ -49,10 +47,10 @@ div a{
 }
 .logo img{
   box-sizing: border-box;
-  width: 50%;
+  width: 90%;
   height: 100%;
   object-fit: cover;
-  border-radius: 30px;
+  border-radius: 20px;
   padding: 10px;
 }
 #search input{
@@ -61,32 +59,34 @@ div a{
   height: 50px;
   border-radius: 10px;
   text-indent: 10px;
-  font-size: x-large;
+  font-size: 1.3rem;
 }
 .logo-cart img{
   box-sizing: border-box;
   width: 100%;
+  height: 50%;
   object-fit: cover;
+  padding: 10px;
 }
 /*end-header*/
 /*start-hover effect - header*/
 #nav_pages a:hover{
-  opacity: 70%;
+  opacity: .7;
 }
 .social-media img:hover {
-  transform: scale(1.2);
+  transform: scale(1.5);
   transition: .5s;
 }
 #cart img:hover {
-  opacity: 70%;
+  opacity: .7;
   transition: .5s;
 }
 .logo img:hover {
-  opacity: 70%;
+  opacity: .7;
   transition: .5s;
 }
 #search input:hover {
-  opacity: 80%;
+  opacity: .8;
   transition: .5s;
 }
 /*end-hover effect - header*/
@@ -95,7 +95,7 @@ div a{
   display: grid;
   grid-template-columns: 50px 1fr 40% 50px;
   grid-template-rows: 10px 100px 100px;
-  grid-gap: .5em;
+  grid-gap: 10px;
 }
 #promo1 {
   grid-column: 2/3;
@@ -119,7 +119,7 @@ div a{
 /*end-onsale-container*/
 /*Start-hover-effect-best-deals*/
 .promo-img:hover {
-  opacity: 80%;
+  opacity: .8;
   transition: .5s;
 }
 /*End-hover-effect-best-deals*/
@@ -130,7 +130,7 @@ div a{
   display: grid;
   grid-template-columns: 50px repeat(5, 1fr) 50px;
   grid-template-rows: 30px 20px auto;
-  grid-gap: 1em;
+  grid-gap: 15px;
   align-items: center;
 }
 #promo-msg {
@@ -172,10 +172,10 @@ border-radius: 5px;
 /*end-best-deals*/
 /*start-best-deals-hover*/
 #best-deals div h2:hover{
-  opacity: 80%;
+  opacity: .8;
 }
 #best-deals img:hover{
-  opacity: 80%;
+  opacity: .8;
   transform: scale(1.1);
   transition: .5s;
 }
@@ -188,7 +188,7 @@ border-radius: 5px;
   grid-template-columns: 50px repeat(6, 1fr) 50px;
   grid-template-rows: 50px 100px 30px 100px 30px;
   align-items: center;
-  grid-gap: .5em;
+  grid-gap: 10px;
 }
 #categories-container h2 {
   grid-column: 2/8;
@@ -312,10 +312,10 @@ border-radius: 5px;
 /*end-categories*/
 /*start-categories-hover*/
 #categories-container h2:hover, #categories-container h5:hover{
-  opacity: 80%;
+  opacity: .8;
 }
 #categories-container img:hover{
-  opacity: 80%;
+  opacity: .8;
 }
 /*end-categories-hover*/
 /*start-payment*/
@@ -341,7 +341,7 @@ border-radius: 5px;
   flex-wrap: wrap;
   gap: 10px;
 }
-#payment-container *{
+#payment-container img{
   width: 80px;
   height: 80px;
   flex: 0 1 30%;
@@ -360,9 +360,9 @@ border-radius: 5px;
   flex-wrap: wrap;
   gap: 10px;
 }
-#delivery-container *{
-  width: 150px;
-  height: 150px;
+#delivery-container img{
+  width: 90px;
+  height: 90px;
   flex: 0 1 30%;
 }
 /*end-payment*/
@@ -501,10 +501,10 @@ footer h5 {
 /*end-footer*/
 /*start-footer-hover*/
 footer div ul li:hover{
-  opacity: 80%;
+  opacity: .8;
 }
 #follow-us-on a img:hover{
-  opacity: 80%;
+  opacity: .8;
   transform: scale(1.1);
   transition: .5s;
 }
@@ -544,14 +544,13 @@ footer div ul li:hover{
   padding-left: 10%;
 }
 #my-account-links ul li a{
-  font-size: 1rem;
   color: #22333B;
   padding-left: 10%;
 }
 /*end my account*/
 /*my account - hover*/
 #my-account-links ul li a:hover{
-  opacity: 80%;
+  opacity: .8;
   color: #F2F4F3;
 }
 /*end my account - hover*/
@@ -608,6 +607,7 @@ footer div ul li:hover{
   font-size: 16px;
 }
 #personal-profile form div:nth-of-type(5){
+  
   width: 70%;
 }
 #save{
@@ -645,7 +645,7 @@ footer div ul li:hover{
   text-align: center;
 }
 #image form input{
-  font-size: 10px;
+  font-size: .6rem;
   background-image: linear-gradient(#A9927D, #A3A3A3);
   border-radius: 50px;
   box-shadow: 5px 5px 10px #22333B;
@@ -664,12 +664,16 @@ footer div ul li:hover{
 /*end-third-section*/
 /*start-third-section-hover*/
 .input_field input:hover{
-  opacity: 50%;
+  opacity: .5;
 }
 ::-webkit-file-upload-button:hover{
   background: #A9927D;
 }
 /*end-third-section-hover*/
+
+
+
+
 
 /*w3school*/
 
@@ -710,7 +714,7 @@ img {
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: #22333B;
 }
 
 /* Caption text */
