@@ -474,9 +474,7 @@ footer div ul li:hover{
   transform: scale(1.1);
   transition: .5s;
 }
-/*end-footer-hover*/
-/*end-index*/
-
+/*end-footer-hover & end-index*/
 /*my account*/
 #profile-container{
   margin-top: 10px;
@@ -586,7 +584,6 @@ footer div ul li:hover{
   font-weight: 700;
   margin-bottom: 10px;
 }
-
 /*end-second-section*/
 /*start-third-section*/
 #profile-container .section{
@@ -639,25 +636,27 @@ footer div ul li:hover{
 /*start shopping cart*/
 #shopping-cart {
   font-family: 'Alice', Helvetica, serif;
-  font-size: 1rem;
+  font-size: 1.3rem;
   background-image: linear-gradient(#F2F4F3, #A3A3A3);
   padding-bottom: 20px;
 }
 .cart-msg {
   color: #22333B;
-  margin: 0 100px;
+  margin: 15px 100px;
   font-size: 1rem;
+  padding-top: 5px;
 }
 .labels-container{
   display: grid;
   grid-template-columns: 50px 1fr 1fr 15% 15% 15% 50px;
   align-items: center;
+  column-gap: 10px;
 }
 .labels-container div{
   grid-column: 2/3;
 }
 .store-name {
-  margin-left: 50px;
+  margin-left: 60px;
   margin-bottom: 10px;
 }
 .phone {
@@ -677,16 +676,20 @@ footer div ul li:hover{
   grid-column: 2/3;
 }
 .product-img img{
-  width: 30vh;
-  height: 150px;
+  width: 25vh;
+  height: 100px;
 }
 .price img{
   width: 5vh;
 }
+.quantity input{
+  height: 30px;
+  font-size: 1rem;
+}
 /*voucher section*/
 #voucher {
   font-family: 'Alice', Helvetica, serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 #voucher h4{
   margin: 20px 50px;
@@ -719,44 +722,7 @@ footer div ul li:hover{
   margin-right: 150px;
   padding-top: 30px;
 }
-
-
-
-
-
-
-
-
-
-
 /*end shopping cart*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*w3school*/
 .mySlides {
   display: none;
@@ -888,6 +854,41 @@ img {
   #gender label{
     width: 15%;
   }
+  /*shopping-cart*/
+  .product-img img{
+    width: 80px;
+    height: 80px;
+  }
+  .vouchers img {
+    width: 20vh;
+  }
+  #shopping-cart {
+    font-size: .8rem;
+  }
+  .cart-msg {
+    font-size: .8rem;
+  }
+  #voucher {
+    font-size: .8rem;
+  }
+  footer {
+    font-size: .8rem;
+  }
+
+  footer div ul {
+    padding-inline-start: 10px;
+  }
   /*w3s*/
-  .prev, .next,.text {font-size: 11px}
+  .prev, .next,.text {
+    font-size: 11px
+  }
+}
+@media screen and (max-width:700px) {
+  .product-img img{
+    width: 60px;
+    height: 80px;
+  }
+  footer {
+    font-size: .6rem;
+  }
 }
