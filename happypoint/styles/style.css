@@ -804,7 +804,6 @@ img {
   from {opacity: .4} 
   to {opacity: 1}
 }
-
 @media screen and (max-width:900px) {
   #nav_pages{
     display: block;
@@ -874,7 +873,6 @@ img {
   footer {
     font-size: .8rem;
   }
-
   footer div ul {
     padding-inline-start: 10px;
   }
