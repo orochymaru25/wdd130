@@ -51,7 +51,7 @@
       <div class="cart-msg">
         <h2>Select free shipping voucher below to enjoy shipping discount.</h2>
       </div>
-      <div class="labels-container">
+      <div class="labels-container checkbox">
         <div>
           <input type="checkbox" name="select-all">
           <label>Select All</label>
@@ -61,23 +61,29 @@
         <p>Quantity</p>
         <p>Total Price</p>
       </div>
-      <div class="store-name">
+      <div class="store-name checkbox">
         <input type="checkbox" name="mall-of-asia">
-        <label>Mall of Asia of Asia</label>
+        <label><a href="#">Mall of Asia</a></label>
       </div>
       <div id="shopping-orders-container">
         <div class="phone">
-          <div class="product-img" id="cellphone">
+          <div class="product-img checkbox" id="cellphone">
             <input type="checkbox" name="product-1">
-            <img src="images/products-s22-ultra.jpg" alt="Eyewear">
+            <a href="#">
+              <img src="images/products-s22-ultra.jpg" alt="Eyewear">
+            </a>
           </div>
           <div class="product-name">
-            <p>Galaxy S22 Ultra - 512 GB</p>
+            <a href="#">
+              <p>Galaxy S22 Ultra - 512 GB</p>
+            </a>
             <p>Samsung</p>
           </div>
           <div class="price" id="cellphone-price">
             <p>$171.01</p>
-            <img src="images/trash-bin.png">
+            <a href="#">
+              <img src="images/trash-bin.png">
+            </a>
           </div>
           <form class="quantity" id="cellphone-quantity">
             <input type="number" id="quantity" name="quantity" min="1" max="5" value="3">
@@ -87,16 +93,23 @@
           </div>
         </div>
         <div class="herbs">
-          <div class="product-img" id="herbal">
-            <input type="checkbox" name="product-2"><img src="images/products-muscadine.png">
+          <div class="product-img checkbox" id="herbal">
+            <input type="checkbox" name="product-2">
+            <a href="#">
+              <img src="images/products-muscadine.png">
+            </a>
           </div>
           <div class="product-name" id="mus-natural">
+            <a href="#">
               <p>Mus Natural - Muscadine Grapeseed</p>
-              <p>No Brand</p>
+            </a>
+            <p>No Brand</p>
           </div>
           <div class="price" id="mus-natural-price">
             <p>$42.86</p>
-            <img src="images/trash-bin.png">          
+            <a href="#">
+              <img src="images/trash-bin.png">
+            </a>         
           </div>          
           <form class="quantity" id="mus-natural-quantity">
               <input type="number" id="quantity" name="quantity" min="1" max="5" value="3">
@@ -108,7 +121,7 @@
       </div>
       <section id="voucher">
         <h4>Your available voucher</h4>
-        <form>
+        <form class="promo-code">
             <label for="code">Select one or enter promo code:</label>
             <input type="text" id="code" name="code" placeholder="Enter Code">
         </form>

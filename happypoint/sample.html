@@ -51,8 +51,54 @@
     </header>
 
     <div id="onsale-container">
-      <div id="promo1">
-        <img class="promo-img" src="images/products-baby-clotes.jpg" alt="baby clothes">
+      <div id="promo1-slideshow-container">
+        <!-- Slideshow container -->
+            <div class="promo1-mySlides fade1">
+                <div class="promo-numbertext">1 / 5</div>
+                <img src="images/products-appliances.jpeg" style="width:100%" alt="#">
+                <div class="text">Appliances</div>
+            </div>
+        
+            <div class="promo1-mySlides fade-1">
+                <div class="promo1-numbertext">2 / 5</div>
+                <img src="images/products-watch.jpg" style="width:100%" alt="#">
+                <div class="promo1-text">Watch</div>
+            </div>
+        
+            <div class="promo1-mySlides fade-1">
+                <div class="promo1-numbertext">3 / 5</div>
+                <img src="images/products-eyewear.jpg" style="width:100%" alt="#">
+                <div cl
+                ass="promo1-text">Eyewear</div>
+            </div>
+    
+            <div class="promo1-mySlides fade-1">
+                <div class="promo1-numbertext">4 / 5</div>
+                <img src="images/products-bag.jpg" style="width:100%" alt="#">
+                <div class="promo1-text">Bags</div>
+            </div>
+        
+            <div class="promo1-mySlides fade-1">
+                <div class="promo1-numbertext">5 / 5</div>
+                <img src="images/products-camera.jpg" style="width:100%" alt="#">
+                <div class="promo1-text">Camera</div>
+            </div>
+        
+            <!-- Next and previous buttons -->
+            <a class="promo1-prev" onclick="promoplusSlides(-1)">&#10094;</a>
+            <a class="promo1-next" onclick="promoplusSlides(1)">&#10095;</a>
+      <!-- </div> -->
+        <br>
+    
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="promo1-dot" onclick="promocurrentSlide(1)"></span>
+            <span class="promo1-dot" onclick="promocurrentSlide(2)"></span>
+            <span class="promo1-dot" onclick="promocurrentSlide(3)"></span>
+            <span class="promo1-dot" onclick="promocurrentSlide(4)"></span>
+            <span class="promo1-dot" onclick="promocurrentSlide(5)"></span>
+            <span class="promo1-dot" onclick="promocurrentSlide(6)"></span>
+        </div>
       </div>
       <div id="promo2">
         <img class="promo-img" src="images/products-shirt.jpg" alt="shirt">
